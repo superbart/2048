@@ -1,6 +1,6 @@
 version: 0.0
 os: linux
 files:
-  - source: /2048
-    destination: /var/lib/tomcat/webapps/
+  - source: /
+    destination: /var/lib/tomcat/webapps/2048
      

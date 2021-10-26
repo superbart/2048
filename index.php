@@ -6,9 +6,9 @@
     $elb_dns = $_SERVER['SERVER_NAME'];
     socket_connect($sock, "8.8.8.8", 53);
     socket_getsockname($sock, $ipaddr);
+    echo "<h1>ELB DNS(IP): [$elb_dns]</h1><br>";
+    echo "<h1>ELB Private IP: [$remote_addr]</h1>";
+    echo "<h1>Host Private IP: [$ipaddr]</h1>";    
     echo "<h1>InstanceID: [$instance_id]</h1>";
     echo "<h1>Hostname: [$hostname]</h1>";
-    echo "<h1>Host Private IP: [$ipaddr]</h1>";
-    echo "<h1>ELB Private IP: [$remote_addr]</h1>";
-    echo "<h1>ELB DNS: [$elb_dns]</h1><br>";
 ?>
